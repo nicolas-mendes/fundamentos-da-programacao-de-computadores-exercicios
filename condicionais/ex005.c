@@ -3,23 +3,22 @@
 
 int main()
 {
-    int vet[3],temp,i,j;
+    int vet[4],temp,i,j;
     bool flag;
 
-    printf("Digite o primeiro numero: ");
+    printf("Digite tres numeros em ordem crescente: ");
     scanf("%i%*c",&vet[0]);
-    
-    printf("Digite o segundo numero: ");
     scanf("%i%*c",&vet[1]);
-    
-    printf("Digite o terceiro numero: ");
     scanf("%i%*c",&vet[2]);
+    
+    printf("Digite um quarto numero (fora de ordem): ");
+    scanf("%i%*c",&vet[3]);
 
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < 4; i++)
     {   
         flag = false;
 
-        for (j = 0; j < 3 - i - 1; j++)
+        for (j = 0; j < 4 - i - 1; j++)
         {
             if (vet[j] > vet[j+1])
             {
@@ -35,11 +34,11 @@ int main()
         }
     }
     
-    printf("\n Numeros em ordem crescente: ");
+    printf("\n Numeros em ordem decrescente: ");
 
-    for (i = 0; i < 3; i++)
+    for (i = 3; i >= 0; i--)
     {
-        printf(" %i,",vet[i]);
+        printf("%i, ",vet[i]);
     }
     
     return 0;
