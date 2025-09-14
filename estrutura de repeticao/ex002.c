@@ -1,3 +1,6 @@
+// 2. Faça um programa que leia um valor N inteiro e positivo. Calcule e mostre o valor de E, conforme a
+// fórmula a seguir:
+
 #include <stdio.h>
 
 int main()
